@@ -9,7 +9,7 @@ jobs:
 
       - name: install python
         uses: actions/setup-python@v2
-        python-version: '3.9'
+          python-version: '3.9'
 
       - name: install flake8
         run: |
