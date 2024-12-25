@@ -7,7 +7,7 @@ on:
 
 jobs:
   lingting:
-    runs-on: ${{ matrix.os}}
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
