@@ -1,0 +1,19 @@
+name: ci
+on: push
+jobs:
+  lingtings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code checkout
+      uses: actions/checkout@v3
+       
+      uses: actions/setup-python@v2
+      - name: install python
+        python-version: '3.9'
+      - name: install flake8
+        run: |
+        python -m install --upgrade pip
+        pip install flake8
+      - name: run flake8
+        run: |
+        flake8 app.py
